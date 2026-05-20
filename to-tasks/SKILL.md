@@ -52,7 +52,7 @@ Iterate until approved.
 
 ### 5. Publish tasks
 
-For each approved slice, write a task doc in the project docs path (`docs/` by default). These tasks are ready for AFK agents.
+For each approved slice, write a task doc in the `tasks` folder in `docs` path of the project. These tasks are ready for AFK agents.
 
 Publish in **dependency order** (blockers first) so you can reference real task identifiers in the "Blocked by" field.
 
