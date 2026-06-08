@@ -39,11 +39,11 @@ Stop. List what you tried. Ask the user for:
 
 ## Output
 
-Create `docs/bug/<bug_id>-<slug>/` (sequential numbering, e.g. `0001-slug`).
+**After** the reproduction loop is set and you cannot improve it any more, create `docs/bug/<bug_id>-<slug>/` (sequential numbering, e.g. `0001-slug`).
 
 Contents:
 
 - `reproduction.md` — bug description and reproduction steps
 - `*.sh` / `*.py` / `*.test.*` — reproduction scripts (or inline commands in the markdown)
 
-Then instruct the user to run `/generate-hypothesis`.
+Then instruct the user to run `/decompose-bug` or `/generate-hypothesis` if the user thinks the bug has a single cause.

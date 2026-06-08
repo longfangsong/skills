@@ -7,10 +7,6 @@ description: Generate a ranked list of hypotheses about a bug before testing any
 
 Run the reproduction steps from `docs/bug/<bug_id>-<slug>/` once, then dig into the codebase to produce **3–5 ranked hypotheses** about the cause of the bug.
 
-## Rule: single-hypothesis anchoring
-
-Never settle on one hypothesis. Force yourself to generate multiple candidates.
-
 ## Hypothesis format
 
 Each hypothesis must be **falsifiable**:

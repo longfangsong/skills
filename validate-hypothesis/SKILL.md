@@ -33,4 +33,6 @@ Write the full trace to `docs/bug/<bug_id>-<slug>/trace.md`:
 - Related log output
 - Root cause analysis
 
-Then instruct the user to run `/fix`.
+**Before** running `/fix`, check: do **all** symptoms from the reproduction now pass? If some symptoms are fixed but others remain, the bug likely has multiple independent causes. Run `/decompose-bug` to split the remaining symptoms into a new child bug, then proceed.
+
+If all symptoms are explained, instruct the user to run `/fix`.
