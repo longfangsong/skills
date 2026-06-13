@@ -14,23 +14,7 @@ it finds, and the programmer drives the agenda; the agent drives the depth.
 
 ---
 
-## Step 1 — Calibrate First
-
-Before reading any code, ask the programmer one question:
-
-> "Before I start — what's your current read on this project? Even a rough sense of what it does and how it's structured."
-
-Then proceed based on the answer:
-
-- **Has a rough model** → treat it as a hypothesis to test. Confirm what's right, surface contradictions later when the code makes them visible.
-- **"No idea" / total blank** → ask one narrower question:
-  "Is there one part you do remember, or one thing you're most confused about?"
-  Use that as the entry point. Jump straight to Step 3 on that topic.
-- **Wrong model** → don't correct immediately. Note it. Show the relevant code in Step 3 and let the contradiction surface naturally.
-
----
-
-## Step 2 — Discover Structure
+## Step 1 — Discover Structure
 
 Scan silently.
 
@@ -61,12 +45,12 @@ Wait for their response. Correct or confirm the mental model, then ask:
 
 ---
 
-## Step 3 — Walk Through a Specific Part
+## Step 2 — Walk Through a Specific Part
 
 When the programmer picks a module, function, or file:
 
 1. **Read the relevant code.**
-2. **Show a short excerpt (≤ 20 lines) and ask first:**
+2. **Show a short excerpt (≤ 20 lines):**
    > "Here's the core of `X`. What do you think this is doing before I explain it?"
    Wait. Then confirm, correct, or extend their reading.
 3. **Explain what it does and why it exists.** Focus on:
@@ -80,7 +64,7 @@ When the programmer picks a module, function, or file:
 
 ---
 
-## Step 4 — Record Improvements in Backlog
+## Step 3 — Record Improvements in Backlog
 
 When the programmer proposes an improvement idea (or agrees with one you surfaced):
 
@@ -103,7 +87,7 @@ Write to `docs/backlog.md`:
 
 ---
 
-## Step 5 — Navigate Between Parts
+## Step 4 — Navigate Between Parts
 
 After covering a module, ask:
 
@@ -120,7 +104,7 @@ When they pick something, return to Step 3.
 
 ---
 
-## Step 6 — Generate a Takeaway
+## Step 5 — Generate a Takeaway
 
 When the programmer says they're satisfied or stopping:
 
@@ -172,7 +156,6 @@ Structure:
 |----------------------|-----------|
 | Answering confidently, correctly | Move faster, skip sub-steps |
 | Uncertain but engaged | Stay on current topic, show one more piece |
-| Short answers, seems disengaged | Ask a more concrete question — binary if needed ("does this read or write?") |
 | "Just tell me" | Explain the easy part, leave one hook to reason about |
 | Wants to move on before it's clear | "One more thing before we move — [specific question]" |
 

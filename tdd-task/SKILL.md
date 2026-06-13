@@ -30,12 +30,11 @@ Read the task document. Extract:
 - **Blocked by** — any dependencies; confirm they are satisfied before starting
 - **Parent** — any parent task for context
 
-### 1. Create a Dedicated Git Branch
+### 1. Ensure the Git working tree is clean
 
-Before any code changes:
+Before making any code changes:
 
-- [ ] Create a new branch for the implementation (e.g. `feat/<task-title>`)
-- [ ] Work exclusively on this branch
+If the current Git repository has uncommitted changes, create a commit with the message "before XXX".
 
 ### 2. Plan (Autonomous)
 
@@ -67,6 +66,7 @@ Rules:
 - Never refactor while RED — get to GREEN first
 - Tests verify behavior through public interfaces, not implementation details
 - No speculative features
+- Do **NOT** include the task name or id in test name
 
 Each acceptance criterion should be marked `[x]` as its corresponding test(s) pass.
 
@@ -80,13 +80,16 @@ After all tests pass and all acceptance criteria are checked:
 - [ ] Run tests after every refactor step
 - [ ] Ensure no acceptance criterion regressed
 
-### 5. Report
+### 5. Commit
+
+After completing **ALL** the changes, create a commit with a clear and meaningful commit message.
+
+### 6. Report
 
 Present the final state:
 
 - All acceptance criteria checked off
 - What was built (end-to-end summary)
-- Git branch name for review / merge
 - Any open questions or follow-ups
 
 ## Checklist Per Cycle
