@@ -1,1 +1,0 @@
-../grill-with-docs/ADR-FORMAT.md
