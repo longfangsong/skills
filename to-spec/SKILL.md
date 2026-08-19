@@ -1,20 +1,16 @@
 ---
 name: to-spec
-description: Turn the current conversation into a spec and publish it to the project doc folder — no interview, just synthesis of what you've already discussed.
+description: Turn the current conversation into a product level spec and publish it to the project doc folder — no interview, just synthesis of what you've already discussed.
 disable-model-invocation: true
 ---
 
-This skill takes the current conversation context and codebase understanding and produces a spec (you may know this document as a PRD). Do NOT interview the user — just synthesize what you already know.
+This skill takes the current conversation context and codebase understanding and produces a product level spec (you may know this document as a PRD). Do NOT interview the user — just synthesize what you already know.
 
 ## Process
 
 1. Explore the repo to understand the current state of the codebase, if you haven't already. Use the project's domain glossary vocabulary throughout the spec, and respect any ADRs in the area you're touching.
 
-2. Sketch out the seams at which you're going to test the feature. Existing seams should be preferred to new ones. Use the highest seam possible. If new seams are needed, propose them at the highest point you can. The fewer seams across the codebase, the better - the ideal number is one.
-
-Check with the user that these seams match their expectations.
-
-3. Write the spec using the template below. Save the result to `docs/prd/` and use sequential numbering: `0001-slug.md`, `0002-slug.md`, etc.
+2. Write the spec using the template below. Save the result to `docs/prd/` and use sequential numbering: `0001-slug.md`, `0002-slug.md`, etc.
 
 <spec-template>
 
@@ -38,29 +34,11 @@ A LONG, numbered list of user stories. Each user story should be in the format o
 
 This list of user stories should be extremely extensive and cover all aspects of the feature.
 
-## Implementation Decisions
+## Testing Plans
 
-A list of implementation decisions that were made. This can include:
+A list of testing decisions that were made.
 
-- The modules that will be built/modified
-- The interfaces of those modules that will be modified
-- Technical clarifications from the developer
-- Architectural decisions
-- Schema changes
-- API contracts
-- Specific interactions
-
-Do NOT include specific file paths or code snippets. They may end up being outdated very quickly.
-
-Exception: if a prototype produced a snippet that encodes a decision more precisely than prose can (state machine, reducer, schema, type shape), inline it within the relevant decision and note briefly that it came from a prototype. Trim to the decision-rich parts — not a working demo, just the important bits.
-
-## Testing Decisions
-
-A list of testing decisions that were made. Include:
-
-- A description of what makes a good test (only test external behavior, not implementation details)
-- Which modules will be tested
-- Prior art for the tests (i.e. similar types of tests in the codebase)
+Please focus on what to test instead of how (manually or automatically) to test them.
 
 ## Out of Scope
 
