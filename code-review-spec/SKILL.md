@@ -31,7 +31,7 @@ Read the spec, then walk the diff requirement by requirement.
 Report:
 
 - (a) requirements the spec asked for that are missing or partial;
-- (b) behaviour in the diff that wasn't asked for (scope creep);
+- (b) behavior in the diff that wasn't asked for (scope creep);
 - (c) requirements that look implemented but where the implementation looks wrong.
 
-Quote the spec line for each finding. Under 400 words.
+Quote the spec line for each finding.

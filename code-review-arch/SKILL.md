@@ -62,4 +62,4 @@ Report:
 - (a) every place the diff contradicts an ADR: cite the decision; if the friction is real enough that the ADR itself deserves reopening, say so explicitly; and
 - (b) every baseline finding: name the check, quote the hunk, and state the cost in terms of **leverage** or **locality**.
 
-Use CONTEXT.md vocabulary for the domain and the glossary above for the architecture. Review the change, not the codebase — pre-existing shallowness is out of scope unless the diff makes it worse. Under 400 words.
+Use CONTEXT.md vocabulary for the domain and the glossary above for the architecture. Review the change, not the codebase — pre-existing shallowness is out of scope unless the diff makes it worse. 
